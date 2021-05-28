@@ -1,0 +1,13 @@
+//=============== AQUI IMPORTA EL ORDEN EN COMO ACOMODEN LOS ELEMENTOS ===============
+@import 'base/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap'); //FUENTE PRINCIPAL
+@import 'base/variables';
+@import 'base/globales';
+@import 'base/mixins';
+@import 'base/utilidades';
+
+
+
+//AQUÍ AGREGEN TODOS LOS LAYOUT
+@import 'layout/header';
+@import 'layout/footer';

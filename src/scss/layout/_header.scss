@@ -1,0 +1,44 @@
+.header{
+    background-color: $naranja;
+    color: $blanco;
+    h2{text-transform: uppercase; color: $blanco;}
+}
+.header-contenido{
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $separacion / 3;
+    }
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: $separacion / 3;
+    img{width: 10rem;}
+}
+.buscador{
+    margin: $separacion / 3 0;
+    input{
+        border: none;
+        padding: 9px 10px 9px 50px;
+        outline: none;
+        font-size: 1.8rem;
+        border-radius: 1.5rem;
+        background: $blanco url("../img/iconSearch3.png") no-repeat 9px center;
+        width: 25rem;
+        @include tablet{width: 50rem;}
+        cursor: pointer;
+    }
+}
+
+.Shop-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

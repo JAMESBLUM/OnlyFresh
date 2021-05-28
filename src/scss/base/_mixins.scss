@@ -1,0 +1,25 @@
+
+//=================== ESTOS SON NUESTRAS MEDIA QUERIES PARA EL RESPONSIVE WEB DESIGN ===================  
+@mixin telefono{
+    @media(min-width: $smartphone){
+      @content; 
+    }
+  }
+  @mixin tablet{
+    @media(min-width: $tablet){
+      @content; 
+    }
+  }
+  @mixin desktop{
+    @media(min-width: $desktop){
+      @content; 
+    }
+  }
+
+//====================== AQUI ESTA NUESTRO GRID PARA CREAR DISTINTOS LAYOUTS ====================== 
+  @mixin grid($columnas, $espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+  }
+  
