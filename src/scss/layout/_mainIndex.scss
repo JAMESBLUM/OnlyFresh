@@ -1,0 +1,22 @@
+.mainIndex{
+    padding-top: $separacion;
+    h2{
+        text-transform: uppercase;
+        color: $gris;
+    }
+}
+.mainIndex-contenido{
+    padding-top: $separacion / 3;
+    //Agrega un display Grid de 1 columna y una separacion = 5rem
+    @include grid(1, $separacion);
+
+    @include tablet{
+        @include grid(2, $separacion);
+    }
+    @include desktop{
+        @include grid(4, $separacion);
+    }
+}
+.seccionVerde{
+    padding: $separacion / 3 0;
+}

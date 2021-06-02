@@ -1,0 +1,22 @@
+.indexComprar{
+    color: $gris;
+    padding-bottom: $separacion;
+    h2{padding-bottom: $separacion / 3; text-transform: uppercase;}
+}
+.paso{
+    svg, h4{stroke: $brown; color: $brown;}
+    margin-top: $separacion / 3;
+    padding: 4rem 0;
+    text-align: center;
+    background-color: $blanco;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    border-radius: .5rem; 
+    @include tablet{margin: 0;}
+}
+.indexComprar-contenido{
+    @include tablet{
+        @include grid(3, $separacion);
+    }
+}

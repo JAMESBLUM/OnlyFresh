@@ -1,1 +1,29 @@
-.centrar-texto{text-align: center;}
+.centrar-texto {text-align: center;}
+
+.producto{
+    margin: 0 auto;
+    border-radius: .5rem;
+    p{
+        color: $verde;
+        font-weight: bold;
+        margin: 0;
+    }
+    button{
+        color: $blanco;
+        font-weight: $bold;
+        text-transform: uppercase;
+        background-color: $brown;
+        border: none;
+        border-radius: .5rem;
+        margin: $separacion / 3 0;
+        padding: 1rem 7rem;
+        cursor: pointer;
+        &:hover{background-color: $verde;}
+    }
+    background-color: $blanco;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    img{ padding: 2rem 0; width: 90%;}
+}

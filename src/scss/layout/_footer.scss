@@ -2,43 +2,55 @@
     background-color: $naranja;
     color: $blanco;
     h2{text-transform: uppercase; color: $blanco;}
+    img{width: 10rem;}
+    a{color: $blanco;}
+    a:hover{color: $brown;}
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: $separacion / 3;
+    gap: $separacion / 3;
 }
 .footer-contenido{
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
-    padding-top: $separacion / 4;
-    @include tablet{
+    justify-content: center;
+    @include desktop{
         flex-direction: row;
-        gap: $separacion * 3;
+        gap: $separacion * 2;
     }
 }
-.footer-logo{
+/*================== CONTACTO ==================*/
+.email{
     display: flex;
+    flex-direction: center;
     align-items: center;
-    gap: $separacion / 3;
-    img{width: 10rem;}
 }
-.contacto{
+.ubicacion{
     display: flex;
-    flex-direction: column;
-    a{color: $blanco;}
-    .email, .ubicacion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
+    justify-content: center;
+    align-items: center;
 }
+/*================== SOBRE NOSOTROS ==================*/
 .sobreNosotros{
+    margin: $separacion / 3 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    a{color: $blanco;}
+    @include desktop{
+        margin: 0;
+    }
 }
+
+/*================== REDES SOCIALES ==================*/
 .redesSociales-iconos{
     margin-top: 1rem;
     display: flex;
-    justify-content: center;
     gap: $separacion / 3;
+    svg:hover{
+        stroke: $brown;
+    }
 }

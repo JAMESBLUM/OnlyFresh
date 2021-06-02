@@ -4,7 +4,6 @@
     h2{text-transform: uppercase; color: $blanco;}
 }
 .header-contenido{
-    margin: 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,10 +16,12 @@
 }
 .header-logo{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: $separacion / 3;
     img{width: 10rem;}
 }
+
 .buscador{
     margin: $separacion / 3 0;
     input{
@@ -32,6 +33,7 @@
         background: $blanco url("../img/iconSearch3.png") no-repeat 9px center;
         width: 25rem;
         @include tablet{width: 50rem;}
+        @include desktop{ width: 60rem;}
         cursor: pointer;
     }
 }

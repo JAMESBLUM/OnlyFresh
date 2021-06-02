@@ -1,0 +1,35 @@
+
+//Si el navegador no acepta imagenes WEBP entonces carga la siguiente imagen que es png
+.webp .heroIndex{background-image: url(../img/Raspberries&Blueberries.webp);}
+.no-webp .heroIndex{background-image: url(../img/Raspberries&Blueberries.jpg);}
+
+.heroIndex{
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40rem;
+}
+.overlayIndex{
+    background-color: rgba(0, 0, 0, .5);
+    width: auto;
+    height: 100%;
+}
+
+.heroIndex-contenido{
+    color: $blanco;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+/*============================ HERO SEMILLAS ============================*/
+//Si el navegador no acepta imagenes WEBP entonces carga la siguiente imagen que es png
+.webp .heroSemillas{background-image: url(../img/Semillas.webp);}
+.no-webp .heroSemillas{background-image: url(../img/Semillas.png);}
+.heroSemillas{
+    margin: $separacion 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50rem;
+}

@@ -1,0 +1,17 @@
+.navPrincipal{
+    background-color: $brown;
+    a{color: $blanco;}
+}
+.navPrincipal-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{padding: $separacion / 4  0;}
+    a:hover{color: $verde;}
+    //Agrega un mixin (media querie) para cambiar la distribucion de los elementos
+    @include tablet{
+        flex-direction: row;
+        gap: $separacion;
+    }
+}
