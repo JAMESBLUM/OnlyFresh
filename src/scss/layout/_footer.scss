@@ -26,6 +26,7 @@
 .email{
     display: flex;
     flex-direction: center;
+    justify-content: center;
     align-items: center;
 }
 .ubicacion{
@@ -49,6 +50,7 @@
 .redesSociales-iconos{
     margin-top: 1rem;
     display: flex;
+    justify-content: center;
     gap: $separacion / 3;
     svg:hover{
         stroke: $brown;

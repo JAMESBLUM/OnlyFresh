@@ -1,0 +1,13 @@
+.Nav-secundaria-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{color: $brown; padding-top: 1rem;}
+    a:hover{color: $gris;}
+    padding-bottom: $separacion / 2;
+    @include desktop{
+        justify-content: initial;
+        align-items: initial;
+    }
+}

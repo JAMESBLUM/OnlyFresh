@@ -1,5 +1,4 @@
 .centrar-texto {text-align: center;}
-
 .producto{
     margin: 0 auto;
     border-radius: .5rem;
@@ -26,4 +25,53 @@
     -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
     img{ padding: 2rem 0; width: 90%;}
+}
+.btn-comprar{
+    border: none;
+    color: $gris;
+    background-color: $azul;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: .6rem;
+    @include tablet{width: auto;}
+    &:hover{
+        background-color: $verde;
+        color: $blanco;
+    }
+}
+.btn-delete{
+    border: none;
+    background-color: #fb3640;
+    border-radius: .5rem;
+    width: 3rem;
+    cursor: pointer;
+}
+/*================ Diseño de las secciones ================*/
+.title{
+    h2{color:$brown;}
+    border-bottom: solid .5rem $brown;
+    width: 33rem;
+}
+
+.seccion-productos{
+    h2{ text-align: center; border-bottom: solid .5rem $brown;}
+    @include desktop{
+    padding: $separacion / 2 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: $separacion;
+    h2{ text-align: initial;}
+    }
+}
+.productos{
+    .producto{
+        margin-bottom: 2rem;
+        @include desktop{margin-bottom: 0;}
+    }
+    @include tablet{@include grid(2, $separacion);}
+    @include desktop{
+        @include grid(3, $separacion);
+    }
 }

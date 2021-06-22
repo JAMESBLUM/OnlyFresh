@@ -1,0 +1,53 @@
+.metodoPago {
+    margin: $separacion 0;
+    legend{
+        color: $brown;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+        @include tablet{text-align: left;}
+    }
+}
+
+.campo {
+    text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    @include desktop{text-align: left;}
+    input,select{
+        border: none;
+        border-radius: .3rem;
+        padding: .7rem;
+        background-color: $azul;
+    }
+    select{@include desktop{
+        width: 35rem;
+    }}
+    input{margin-bottom: 1rem;}
+    label{margin-bottom: 1rem;}
+}
+.YY, .MM{
+    @include tablet{
+        input{width: 10rem;}
+    }
+}
+.caducidad{
+    @include tablet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+.infoTarjeta {
+    @include desktop {
+        display: flex;
+        gap: $separacion * 2;
+    }
+}
+.botonComprar{
+    display: flex;
+    justify-content: center;
+}

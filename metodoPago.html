@@ -57,7 +57,59 @@
         </div>
     </header>
     <!--============= ACABA EL HEADER =============-->
-  
+    <nav class="navPrincipal">
+        <div class="navPrincipal-contenido contenedor">
+            <a href="frutas&granel.html">Frutas & Granel</a>
+            <a href="verduras.html">Verduras</a>
+            <a href="pecados&carnes.html">Pescados & Carnes</a>
+            <a href="canastaBasica.html">Canasta Basica</a>
+        </div>
+    </nav>
+
+    <main class="contenedor">
+        <fieldset class="metodoPago">
+            <legend>Metodo de Pago</legend>
+            <form action="">
+                <div class="campo">
+                    <label for="opciones">Selecciona un Metodo de Pago</label>
+                    <select name="" id="opciones">
+                        <option value="" disabled selected>--- Seleccione ---</option>
+                        <option value="payPal">Paypal</option>
+                        <option value="Visa">Visa</option>
+                        <option value="masterCard">Mastercard</option>
+                        <option value="aspei">ASPEI</option>
+                        <option value="oxxo">OXXO</option>
+                    </select>
+                </div>
+                <div class="infoTarjeta">
+                    <div class="campo">
+                        <label for="numeroTarjeta">Número de Tarjeta</label>
+                        <input type="number" id="numeroTarjeta" placeholder="Numero Tarjeta">
+                    </div>
+                    <div class="campo">
+                        <label class="centrar-texto">Fecha de caducidad</label>
+                        <div class="caducidad">
+                            <div class="MM">
+                                <label for="mm">MM</label>
+                                <input type="number" min="1" max="12" id="mm" placeholder="Mes">
+                            </div>
+                            <div class="YY">
+                                <label for="yy">YY</label>
+                                <input type="number" id="yy" placeholder="Año">
+                            </div> 
+                        </div>                       
+                    </div>
+                    <div class="campo">
+                        <label for="securityCode">Codigo de seguridad</label>
+                        <input type="number" id="securityCode" placeholder="Codigo Seguridad">
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+        <div class="botonComprar">
+            <button class="btn-comprar">Comprar</button>
+        </div>
+    </main>
     <!--================ INICIA EL FOOTER ================-->
     <footer class="footer">
         <div class="footer-contenido contenedor">
