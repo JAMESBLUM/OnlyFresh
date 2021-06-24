@@ -1,0 +1,29 @@
+.profile-contenido{
+    padding: $separacion 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-foto{
+    width: 20rem;
+    img{border-radius: 50%;}
+}
+.profile-nameUser{
+    padding: 2rem 0;
+}
+
+.profile-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: $brown;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    a:hover{
+        color: $verde;
+    }
+}
